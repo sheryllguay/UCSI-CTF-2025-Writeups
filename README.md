@@ -33,9 +33,9 @@ This repository is both a personal archive of my growth as a cybersecurity learn
 ## Writeups
 Each category has a folder containing individual challenge writeups. Each writeup typically includes:  
 1. **Challenge Description:** What the challenge is about.  
-2. **Approach / Methodology:** Step-by-step reasoning and tools used.  
-3. **Solution / Exploit:** Final solution, including code snippets if applicable.  
-4. **Lessons Learned:** Key takeaways or insights from the challenge.  
+2. **Methodology:** Step-by-step reasoning and tools used.  
+3. **Solution:** Final solution, including code snippets if applicable.  
+4. **Lessons Learned (optional):** Key takeaways or insights from the challenge.  
 
 
 ---
