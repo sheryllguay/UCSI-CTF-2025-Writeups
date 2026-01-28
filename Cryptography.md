@@ -1,4 +1,4 @@
-# Crytography
+# Cryptography
 ## Challenge 1: Baby Crypto
 ![Baby Crypto Challenge](images/baby_crypto.png) <br>
 Baby Crypto is a beginner-level cryptography challenge where a text file is provided containing an encoded string. The goal is to identify the encoding method used and decode it to retrieve the flag.<br>
