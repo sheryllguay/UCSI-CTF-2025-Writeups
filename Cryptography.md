@@ -1,4 +1,13 @@
 # Cryptography
+
+## Table of Contents
+1. [Challenge 1: Baby Crypto](#challenge-1:-baby-crypto)  
+2. [Challenge 2: Simple Crypto](#challenge-2:-simple-crypto)  
+3. [Challenge 3: Among Us](#challenge-3:-among-us)   
+4. [Challenge 4: Dungeons](#challenge-4:-dungeons)
+
+---
+
 ## Challenge 1: Baby Crypto
 ![Baby Crypto Challenge](images/baby_crypto.png)
 
@@ -36,6 +45,7 @@ We’re given a message encrypted with a **Hill cipher (2x2 matrix encryption mo
 <br>Encrypted Pairs (as tuples):<br>
 `(24, 67), (28, 73), (103, 53), (72, 77), (85, 116), (71, 95), (53, 114), (105, 112), (99, 111), (40, 73), (82, 95), (59, 117), (15, 33), (125, 0)`
 <br>We need to find **K<sup>−1</sup> (mod 128)** and **decrypt all encrypted pairs** to recover the plaintext (flag).
+
 ### Methodology
 1. Compute the determinant: `det(K) = 1⋅1 − 0⋅1 = 1`
 2. Since `gcd(1, 128) = 1`, the matrix is invertible mod 128.
@@ -44,6 +54,7 @@ We’re given a message encrypted with a **Hill cipher (2x2 matrix encryption mo
 4. Decrypt each ciphertext pair (c1,c2) into plaintext (p1,p2):<br>
 >[p1, p2] = K<sup>-1</sup> [c1, c2] (mod 128) --> p1 = (c1-c2), p2 = c2
 5. Convert the resulting numbers into ASCII characters.
+
 ### Solution
 Decryption rule:
 - p1 = (c1-c2) mod 128
@@ -66,6 +77,7 @@ print(flag)
 ```
 Run the python snippet in this website: https://www.onlinegdb.com/online_python_compiler 
 <br>Flag obtained: `UCSI25{Math_Crypto_Is_Fun!}`
+
 ### Lessons Learned
 - For small Hill cipher matrices, checking the determinant first quickly tells you if an inverse exists.
 - Some keys (like this one) simplify decryption a lot: here it becomes basically “subtract the second value from the first.”
@@ -104,6 +116,7 @@ The encrypted message is provided in hexadecimal format:
 `574056413f2059732cfe8e1c0db54e471403a670b55270562d1dc6779e779b97bddf2678d7ae1e4c84a0`
 
 The goal is to reconstruct the key and decrypt the message to obtain the flag.
+
 ### Methodology
 1. Convert the given hexadecimal string into raw bytes.
 2. Generate the XOR key using a Fibonacci-like sequence:
@@ -113,6 +126,7 @@ The goal is to reconstruct the key and decrypt the message to obtain the flag.
 3. Ensure the key length matches the length of the encrypted message.
 4. XOR each ciphertext byte with the corresponding key byte to recover the plaintext.
 5. Convert the resulting byte values into readable ASCII characters.
+
 ### Solution
 Python code used to decrypt the message:
 ```python
@@ -128,3 +142,8 @@ print(pt.decode())
 ```
 Run the python snippet in this website: https://www.onlinegdb.com/online_python_compiler 
 <br>Flag obtained: `UCSI25{Dungeons_And_Dragons_Crypto_Quest!}`
+
+### Lessons Learned
+- XOR encryption is reversible as long as the key is known or can be reconstructed.
+- Modulo operations help keep key values within valid byte ranges.
+
