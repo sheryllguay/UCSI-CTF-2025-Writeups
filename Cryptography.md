@@ -1,10 +1,10 @@
 # Cryptography
 
 ## Table of Contents
-1. [Challenge 1: Baby Crypto](#challenge-1:-baby-crypto)  
-2. [Challenge 2: Simple Crypto](#challenge-2:-simple-crypto)  
-3. [Challenge 3: Among Us](#challenge-3:-among-us)   
-4. [Challenge 4: Dungeons](#challenge-4:-dungeons)
+1. [Challenge 1: Baby Crypto](#challenge-1-baby-crypto)  
+2. [Challenge 2: Simple Crypto](#challenge-2-simple-crypto)  
+3. [Challenge 3: Among Us](#challenge-3-among-us)   
+4. [Challenge 4: Dungeons](#challenge-4-dungeons)
 
 ---
 
