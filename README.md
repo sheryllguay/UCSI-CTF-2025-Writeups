@@ -1,10 +1,7 @@
 # UCSI CTF 2025 Writeups
 
 ## Overview
-A comprehensive collection of writeups for all the challenges I solved during the **UCSI CTF 2025**. Each writeup includes an overview of the challenge, the methodology used to approach it, an analysis of the intended vulnerabilities, and the final exploit or solution.  
-
-The challenges span multiple categories:  
-**Forensics, Reverse Engineering, Web Exploitation, Miscellaneous, AI (Hacking), Cryptography, and OSINT.**  
+A comprehensive collection of writeups for all the challenges I solved during the **UCSI CTF 2025**.  
 
 This repository is both a personal archive of my growth as a cybersecurity learner and a helpful guide for anyone preparing for future CTFs.
 
@@ -25,7 +22,7 @@ This repository is both a personal archive of my growth as a cybersecurity learn
 - **Web Exploitation:** SQLi, XSS, command injection, authentication bypass.  
 - **Miscellaneous:** Puzzles, logic, trivia, and unique challenges.  
 - **AI (Hacking):** Exploiting vulnerabilities in AI-generated responses.  
-- **Cryptography:** Encryption/decryption, cipher analysis, crypto challenges.  
+- **[Cryptography](Cryptography.md)**
 - **OSINT:** Open-source intelligence, information gathering, social engineering.  
 
 ---
