@@ -22,7 +22,7 @@ This repository is both a personal archive of my growth as a cybersecurity learn
 - **Web Exploitation:** SQLi, XSS, command injection, authentication bypass.  
 - **Miscellaneous:** Puzzles, logic, trivia, and unique challenges.  
 - **AI (Hacking):** Exploiting vulnerabilities in AI-generated responses.  
-- **[Cryptography](Cryptography.md)**
+- [Cryptography](Cryptography.md)
 - **OSINT:** Open-source intelligence, information gathering, social engineering.  
 
 ---
